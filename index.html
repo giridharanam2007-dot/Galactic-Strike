@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Strike: Operation Deep Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <header class="topbar">
+            <div>
+                <h1>GALACTIC STRIKE</h1>
+                <p>OPERATION DEEP SPACE</p>
+            </div>
+            <div class="status">● SYSTEM ONLINE</div>
+        </header>
+
+        <section class="stats">
+            <div> SCORE <strong id="score">0</strong></div>
+            <div> HULL <strong id="health">100</strong></div>
+            <div> LEVEL <strong id="level">1</strong></div>
+            <div> BEST <strong id="best">0</strong></div>
+        </section>
+
+        <div class="canvas-wrap">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+            <div id="overlay" class="overlay">
+                <h2 id="overlayTitle">READY FOR LAUNCH?</h2>
+                <p id="overlayText">
+                    Pilot your spacecraft. Destroy enemies. Survive the galaxy.
+                </p>
+                <button id="startButton">LAUNCH MISSION</button>
+            </div>
+        </div>
+
+        <section class="controls">
+            <span>↑ ↓ ← → / WASD : MOVE</span>
+            <span>SPACE : FIRE LASERS</span>
+            <span>P : PAUSE</span>
+        </section>
+
+        <footer>GALACTIC DEFENSE NETWORK // ALL SYSTEMS OPERATIONAL</footer>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>
